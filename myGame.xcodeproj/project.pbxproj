@@ -17,7 +17,7 @@
 		3631FE3420C84C4A00B69043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3631FE3220C84C4A00B69043 /* LaunchScreen.storyboard */; };
 		3631FE3F20C84C4A00B69043 /* myGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3631FE3E20C84C4A00B69043 /* myGameTests.swift */; };
 		3631FE4A20C84C4A00B69043 /* myGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3631FE4920C84C4A00B69043 /* myGameUITests.swift */; };
-		3631FE5820C8682C00B69043 /* png in Resources */ = {isa = PBXBuildFile; fileRef = 3631FE5720C8682C00B69043 /* png */; };
+		3631FEB920C86ACB00B69043 /* Shooter.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3631FEB820C86ACB00B69043 /* Shooter.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,17 @@
 		3631FE4520C84C4A00B69043 /* myGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3631FE4920C84C4A00B69043 /* myGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myGameUITests.swift; sourceTree = "<group>"; };
 		3631FE4B20C84C4A00B69043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3631FE5720C8682C00B69043 /* png */ = {isa = PBXFileReference; lastKnownFileType = folder; name = png; path = ../../../../../Downloads/png; sourceTree = "<group>"; };
+		3631FE7A20C869AB00B69043 /* Bullet_004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bullet_004.png; sourceTree = "<group>"; };
+		3631FE7B20C869AB00B69043 /* Muzzle_004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Muzzle_004.png; sourceTree = "<group>"; };
+		3631FE7C20C869AB00B69043 /* Muzzle_000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Muzzle_000.png; sourceTree = "<group>"; };
+		3631FE7D20C869AB00B69043 /* Bullet_002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bullet_002.png; sourceTree = "<group>"; };
+		3631FE7E20C869AB00B69043 /* Bullet_003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bullet_003.png; sourceTree = "<group>"; };
+		3631FE7F20C869AB00B69043 /* Muzzle_001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Muzzle_001.png; sourceTree = "<group>"; };
+		3631FE8020C869AB00B69043 /* Muzzle_003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Muzzle_003.png; sourceTree = "<group>"; };
+		3631FE8120C869AB00B69043 /* Bullet_001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bullet_001.png; sourceTree = "<group>"; };
+		3631FE8220C869AB00B69043 /* Bullet_000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bullet_000.png; sourceTree = "<group>"; };
+		3631FE8320C869AB00B69043 /* Muzzle_002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Muzzle_002.png; sourceTree = "<group>"; };
+		3631FEB820C86ACB00B69043 /* Shooter.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Shooter.atlas; path = ../../../../../../Downloads/png/Shooter.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +115,7 @@
 		3631FE2220C84C4A00B69043 /* myGame */ = {
 			isa = PBXGroup;
 			children = (
-				3631FE5720C8682C00B69043 /* png */,
+				3631FE5920C869A200B69043 /* Supporting Files */,
 				3631FE2320C84C4A00B69043 /* AppDelegate.swift */,
 				3631FE2520C84C4A00B69043 /* GameScene.sks */,
 				3631FE2720C84C4A00B69043 /* Actions.sks */,
@@ -135,6 +145,24 @@
 				3631FE4B20C84C4A00B69043 /* Info.plist */,
 			);
 			path = myGameUITests;
+			sourceTree = "<group>";
+		};
+		3631FE5920C869A200B69043 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3631FEB820C86ACB00B69043 /* Shooter.atlas */,
+				3631FE7A20C869AB00B69043 /* Bullet_004.png */,
+				3631FE7B20C869AB00B69043 /* Muzzle_004.png */,
+				3631FE7C20C869AB00B69043 /* Muzzle_000.png */,
+				3631FE7D20C869AB00B69043 /* Bullet_002.png */,
+				3631FE7E20C869AB00B69043 /* Bullet_003.png */,
+				3631FE7F20C869AB00B69043 /* Muzzle_001.png */,
+				3631FE8020C869AB00B69043 /* Muzzle_003.png */,
+				3631FE8120C869AB00B69043 /* Bullet_001.png */,
+				3631FE8220C869AB00B69043 /* Bullet_000.png */,
+				3631FE8320C869AB00B69043 /* Muzzle_002.png */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,9 +272,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3631FE5820C8682C00B69043 /* png in Resources */,
 				3631FE2F20C84C4A00B69043 /* Main.storyboard in Resources */,
 				3631FE2620C84C4A00B69043 /* GameScene.sks in Resources */,
+				3631FEB920C86ACB00B69043 /* Shooter.atlas in Resources */,
 				3631FE3120C84C4A00B69043 /* Assets.xcassets in Resources */,
 				3631FE3420C84C4A00B69043 /* LaunchScreen.storyboard in Resources */,
 				3631FE2820C84C4A00B69043 /* Actions.sks in Resources */,
