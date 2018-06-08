@@ -20,12 +20,23 @@ class ShooterScene: SKScene {
         
     }
     
+    //set up level
     func initShooterScene(){
         let shooterAtlas = SKTextureAtlas(named: "Shooter")
         
         for index in 1...shooterAtlas.textureNames.count{
-            let imgName = String(format: "Shoot%01d", index)
+            let imgName = "Shoot\(index).png"
             shooterAnimation += [shooterAtlas.textureNamed(imgName)]
+        }
+    }
+    
+    //animate the shooter
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let shooterNode = self.childNode(withName: "shooterNode")
+        
+        if(shooterNode != nil){
+            let animation = SKAction.animate(withNormalTextures: shooterAnimation, timePerFrame: 1.0)
+            shooterNode?.run(animation)
         }
     }
 }

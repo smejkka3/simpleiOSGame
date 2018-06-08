@@ -117,7 +117,12 @@
 		3631FE2220C84C4A00B69043 /* myGame */ = {
 			isa = PBXGroup;
 			children = (
-				36AC12A320CADDE4003C5A95 /* Supporting Files */,
+				36AC12A420CADDE4003C5A95 /* Bullet_004.png */,
+				36AC12A520CADDE4003C5A95 /* Bullet_002.png */,
+				36AC12A620CADDE4003C5A95 /* Bullet_003.png */,
+				36AC12A820CADDE4003C5A95 /* Bullet_001.png */,
+				36AC12A920CADDE4003C5A95 /* Bullet_000.png */,
+				36AC12A720CADDE4003C5A95 /* Shooter.atlas */,
 				3631FE2320C84C4A00B69043 /* AppDelegate.swift */,
 				3631FE2520C84C4A00B69043 /* GameScene.sks */,
 				3631FE2720C84C4A00B69043 /* Actions.sks */,
@@ -148,19 +153,6 @@
 				3631FE4B20C84C4A00B69043 /* Info.plist */,
 			);
 			path = myGameUITests;
-			sourceTree = "<group>";
-		};
-		36AC12A320CADDE4003C5A95 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				36AC12A420CADDE4003C5A95 /* Bullet_004.png */,
-				36AC12A520CADDE4003C5A95 /* Bullet_002.png */,
-				36AC12A620CADDE4003C5A95 /* Bullet_003.png */,
-				36AC12A720CADDE4003C5A95 /* Shooter.atlas */,
-				36AC12A820CADDE4003C5A95 /* Bullet_001.png */,
-				36AC12A920CADDE4003C5A95 /* Bullet_000.png */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
