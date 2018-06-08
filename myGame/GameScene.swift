@@ -44,7 +44,17 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-
+        let introLabel = childNode(withName: "introLabel")
+        
+        if(introLabel != nil){
+            let fadeOut = SKAction.fadeOut(withDuration: 0.25)
+            
+            introLabel?.run(fadeOut,completion: {
+                let doors = SKTransition.doorway(withDuration: 0.5)
+                let shooterScene = ShooterScene(fileNamed: "ShooterScene")
+                self.view?.presentScene(shooterScene!,transition: doors)
+            })
+        }
     }
     
     
