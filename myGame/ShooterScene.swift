@@ -39,9 +39,15 @@ class ShooterScene: SKScene {
             let animation = SKAction.animate(withNormalTextures: shooterAnimation, timePerFrame: 0.1)
             
             //fire bullet
+            let shootBullet = SKAction.run({
+                let bulletNode = self.createBUlletNode()
+                self.addChild(bulletNode)
+                bulletNode.physicsBody?.applyImpulse(CGVector(dx: 160.0,dy: 0.0))
+            })
             
+            let sequence = SKAction.sequence([animation,shootBullet])
             
-            shooterNode?.run(animation)
+            shooterNode?.run(sequence)
         }
     }
     
