@@ -26,7 +26,7 @@ class ShooterScene: SKScene {
         let shooterAtlas = SKTextureAtlas(named: "shooter")
         
         for index in 1...shooterAtlas.textureNames.count{
-            let imgName = "win_\(index).png"
+            let imgName = "RunShoot\(index).png"
             shooterAnimation += [shooterAtlas.textureNamed(imgName)]
         }
         
