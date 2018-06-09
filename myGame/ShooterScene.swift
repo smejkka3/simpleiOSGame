@@ -17,6 +17,7 @@ class ShooterScene: SKScene {
 
     override func didMove(to view: SKView) {
         self.initShooterScene()
+        self.physicsWorld.gravity = CGVector(dx: 0, dy: -1.2)
         
     }
     
