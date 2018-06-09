@@ -22,12 +22,13 @@ class ShooterScene: SKScene {
     
     //set up level
     func initShooterScene(){
-        let shooterAtlas = SKTextureAtlas(named: "Shooter")
+        let shooterAtlas = SKTextureAtlas(named: "shooter")
         
         for index in 1...shooterAtlas.textureNames.count{
-            let imgName = "Shoot\(index).png"
+            let imgName = "win_\(index).png"
             shooterAnimation += [shooterAtlas.textureNamed(imgName)]
         }
+        
     }
     
     //animate the shooter
@@ -35,8 +36,28 @@ class ShooterScene: SKScene {
         let shooterNode = self.childNode(withName: "shooterNode")
         
         if(shooterNode != nil){
-            let animation = SKAction.animate(withNormalTextures: shooterAnimation, timePerFrame: 1.0)
+            let animation = SKAction.animate(withNormalTextures: shooterAnimation, timePerFrame: 0.1)
+            
+            //fire bullet
+            
+            
             shooterNode?.run(animation)
         }
+    }
+    
+    //create bullet
+    func createBUlletNode() -> SKSpriteNode {
+        let shooterNode = self.childNode(withName: "shooterNode")
+        let shooterPostition = shooterNode?.position
+        let shooterWidth = shooterNode?.frame.size.width
+        
+        let bullet = SKSpriteNode(imageNamed: "Bullet_000.png")
+        bullet.position = CGPoint(x: shooterPostition!.x + shooterWidth!/2, y: shooterPostition!.y)
+        bullet.name = "bulltetNode"
+        bullet.physicsBody = SKPhysicsBody(rectangleOf: bullet.frame.size)
+        bullet.physicsBody?.usesPreciseCollisionDetection = true
+        
+        return bullet
+        
     }
 }
