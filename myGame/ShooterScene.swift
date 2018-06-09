@@ -13,11 +13,14 @@ class ShooterScene: SKScene {
     
     var score = 0
     var enemyCount = 10
+    var MainGuy = SKSpriteNode()
+    
     var shooterAnimation = [SKTexture]()
 
     override func didMove(to view: SKView) {
-        self.initShooterScene()
+        
         self.physicsWorld.gravity = CGVector(dx: 0, dy: -1.2)
+        self.initShooterScene()
         
     }
     
@@ -29,7 +32,11 @@ class ShooterScene: SKScene {
             let imgName = "RunShoot\(index).png"
             shooterAnimation += [shooterAtlas.textureNamed(imgName)]
         }
+        MainGuy = SKSpriteNode(imageNamed: shooterAtlas.textureNames[0] as! String)
         
+        MainGuy.size = CGSize(width: 70, height: 140)
+        MainGuy.position = CGPoint(x: self.size.width / 3, y: self.size.height / 3)
+        self.addChild(MainGuy)
     }
     
     //animate the shooter

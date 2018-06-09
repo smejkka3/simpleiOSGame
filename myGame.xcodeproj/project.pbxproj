@@ -18,8 +18,8 @@
 		3631FE3F20C84C4A00B69043 /* myGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3631FE3E20C84C4A00B69043 /* myGameTests.swift */; };
 		3631FE4A20C84C4A00B69043 /* myGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3631FE4920C84C4A00B69043 /* myGameUITests.swift */; };
 		36ABBEBA20CBEB2A0000B4A1 /* shooter.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 36ABBEB920CBEB2A0000B4A1 /* shooter.atlas */; };
-		36ABBEBC20CBF11D0000B4A1 /* ShooterScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 36ABBEBB20CBF11D0000B4A1 /* ShooterScene.sks */; };
 		36ABBEBE20CBF1CE0000B4A1 /* Bullet_000.png in Resources */ = {isa = PBXBuildFile; fileRef = 36ABBEBD20CBF1CE0000B4A1 /* Bullet_000.png */; };
+		36ABBEC020CBF93A0000B4A1 /* ShooterScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 36ABBEBF20CBF93A0000B4A1 /* ShooterScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +57,8 @@
 		3631FE4920C84C4A00B69043 /* myGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myGameUITests.swift; sourceTree = "<group>"; };
 		3631FE4B20C84C4A00B69043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36ABBEB920CBEB2A0000B4A1 /* shooter.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = shooter.atlas; path = ../../../../../Downloads/shooter.atlas; sourceTree = "<group>"; };
-		36ABBEBB20CBF11D0000B4A1 /* ShooterScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShooterScene.sks; sourceTree = "<group>"; };
 		36ABBEBD20CBF1CE0000B4A1 /* Bullet_000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bullet_000.png; path = ../../../../../Downloads/png/Objects/Bullet_000.png; sourceTree = "<group>"; };
+		36ABBEBF20CBF93A0000B4A1 /* ShooterScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShooterScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +109,7 @@
 		3631FE2220C84C4A00B69043 /* myGame */ = {
 			isa = PBXGroup;
 			children = (
+				36ABBEBD20CBF1CE0000B4A1 /* Bullet_000.png */,
 				36ABBEB920CBEB2A0000B4A1 /* shooter.atlas */,
 				3631FE2320C84C4A00B69043 /* AppDelegate.swift */,
 				3631FE2520C84C4A00B69043 /* GameScene.sks */,
@@ -119,8 +120,7 @@
 				3631FE3220C84C4A00B69043 /* LaunchScreen.storyboard */,
 				3631FE3520C84C4A00B69043 /* Info.plist */,
 				36038A7C20CACDFA008AC530 /* ShooterScene.swift */,
-				36ABBEBB20CBF11D0000B4A1 /* ShooterScene.sks */,
-				36ABBEBD20CBF1CE0000B4A1 /* Bullet_000.png */,
+				36ABBEBF20CBF93A0000B4A1 /* ShooterScene.sks */,
 			);
 			path = myGame;
 			sourceTree = "<group>";
@@ -254,8 +254,8 @@
 				3631FE2620C84C4A00B69043 /* GameScene.sks in Resources */,
 				3631FE3420C84C4A00B69043 /* LaunchScreen.storyboard in Resources */,
 				36ABBEBE20CBF1CE0000B4A1 /* Bullet_000.png in Resources */,
+				36ABBEC020CBF93A0000B4A1 /* ShooterScene.sks in Resources */,
 				36ABBEBA20CBEB2A0000B4A1 /* shooter.atlas in Resources */,
-				36ABBEBC20CBF11D0000B4A1 /* ShooterScene.sks in Resources */,
 				3631FE2820C84C4A00B69043 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
